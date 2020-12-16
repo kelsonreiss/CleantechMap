@@ -1,7 +1,6 @@
-# Climate Tech Map
-*My Climate Journey Hackathon Project*
+# *A My Climate Journey Hackathon Project*
 
-## Data Visualization created at [Oberserable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map)
+## Data Visualization created at [Oberservable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map)
 ### Rough MVP
 
 <iframe width="100%" height="600" frameborder="0"
