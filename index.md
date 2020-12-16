@@ -2,6 +2,7 @@
 
 ## Data Visualization created at [Oberservable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map)
 ### Rough MVP
+*Click on the dark grey nodes to expand or collapse. Vertical Scroll doesn't work yet.*
 
 <iframe width="100%" height="600" frameborder="0"
   src="https://observablehq.com/embed/@kelsonreiss/cleantech-market-map?cell=chart"></iframe>
