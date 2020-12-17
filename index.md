@@ -6,14 +6,15 @@ We aim to build an interactive resource that visualizes the climate space in a *
 
 ![VIsualization](https://user-images.githubusercontent.com/24867764/102553714-28d17180-4078-11eb-994c-f7e118a09951.png)
 
-*Note: specific organizational structure is TBD. The general idea is a hierarchical graph, with each node containing relevant resources: companies, organizations, links to articles, etc. As you go further "down" the tree, it gets more narrowly focused. So, while you might start at "Energy", in 8 clicks you're at the node "Software" under "Site Planning for Residential Solar", where you'll find [Aurora](https://www.aurorasolar.com/)
+*Note: specific organizational structure is TBD. The general idea is a hierarchical graph, with each node containing relevant resources: companies, organizations, links to articles, etc. As you go further "down" the tree, it gets more narrowly focused. So, while you might start at "Energy", in 8 clicks you're at the node "Software" under "Site Planning for Residential Solar", where you'll find [Aurora](https://www.aurorasolar.com/)*
 
-## Data Visualization created at [Oberservable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map)
 ### Rough Interactive MVP
 *Click on the dark grey nodes to expand or collapse. Vertical Scroll doesn't work yet.*
 
 <iframe width="100%" height="600" frameborder="0"
   src="https://observablehq.com/embed/@kelsonreiss/cleantech-market-map?cell=chart"></iframe>
+  
+Created with [Oberservable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map). Great tool - I see it as the Jupyter Notebook of data visualization.
 
 ### Plenty to fix
 1. Vertical scroll 
