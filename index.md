@@ -1,5 +1,5 @@
 # *A My Climate Journey Hackathon Project*
-Team: Julien Soufflet, Will Jackowitz, [Kelson Reiss](https://www.linkedin.com/in/kelson-reiss/)
+Team: [Julien Soufflet](https://www.linkedin.com/in/julien-soufflet/), [Will Jackowitz](https://www.linkedin.com/in/will-jackowitz-630b91186/), [Kelson Reiss](https://www.linkedin.com/in/kelson-reiss/)
 
 ### Vision
 We aim to build an interactive resource that visualizes the climate space in a **problem-oriented** way. For example, we hope this will be a bridge between Project Drawdown's [Solutions Table](https://drawdown.org/solutions/table-of-solutions) and a database of organizations tackling those solutions, organized in an intuitive and accessible way.
