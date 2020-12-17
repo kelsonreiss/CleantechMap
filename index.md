@@ -4,8 +4,9 @@ Team: Julien Soufflet, Will Jackowitz, [Kelson Reiss](https://www.linkedin.com/i
 ### Vision
 We aim to build an interactive resource that visualizes the climate space in a **problem-oriented** way. For example, we hope this will be a bridge between Project Drawdown's [Solutions Table](https://drawdown.org/solutions/table-of-solutions) and a database of organizations tackling those solutions, organized in an intuitive and accessible way.
 
+![VIsualization](https://user-images.githubusercontent.com/24867764/102553714-28d17180-4078-11eb-994c-f7e118a09951.png)
 
-
+*Note: specific organizational structure is TBD. The general idea is a hierarchical graph, with each node containing relevant resources: companies, organizations, links to articles, etc. As you go further "down" the tree, it gets more narrowly focused. So, while you might start at "Energy", in 8 clicks you're at the node "Software" under "Site Planning for Residential Solar", where you'll find [Aurora](https://www.aurorasolar.com/)
 
 ## Data Visualization created at [Oberservable.hq](https://observablehq.com/@kelsonreiss/cleantech-market-map)
 ### Rough Interactive MVP
