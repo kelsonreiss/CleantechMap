@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Observable Example: Simple Notebook</title>
 <style>
 
 body {
@@ -16,18 +15,42 @@ a:link:not(:hover) {
 
 </style>
 <h1>Demo</h1>
-<p>This example demonstrates how to embed an <a href="https://observablehq.com/@kelsonreiss/climate-tech-map">entire notebook</a> as-is.</p>
+<p>This example demonstrates an Observable notebook embedded as an iframe whose height automatically fits its content.</p>
+
+<!-- Setting an initial height may help initial page layout, but would be overridden on resize. -->
+<iframe id="embed" width="100%" frameborder="0"
+  src="https://observablehq.com/embed/@kelsonreiss/climate-tech-map?cell=chart"></iframe>
+
 <script type="module">
 
-// Load the Observable runtime and inspector.
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+// Select the embed iframe.
+const iframe = document.querySelector("#embed");
 
-// Your notebook, compiled as an ES module.
-import notebook from "https://api.observablehq.com/@kelsonreiss/climate-tech-map.js";
+// The Embedly protocol is to send the height as part of a stringified object.
+// In this example, the resize message is the only message being sent; however,
+// the checks are good practice, lest we try to interpret unrelated messages as
+// resize events. https://docs.embed.ly/v1.0/docs/provider-height-resizing
+function onMessage(message) {
+  if (message.source !== iframe.contentWindow) return;
+  let {data} = message;
 
-// Load the notebook, observing its cells with a default Inspector that simply
-// renders the value of every cell into the provided DOM node.
-const runtime = new Runtime();
-const main = runtime.module(notebook, Inspector.into(document.body));
+  // If message isn’t valid JSON, it must not be our resize event.
+  if (typeof data === "string") {
+    try {
+      data = JSON.parse(data);
+    } catch (ignore) {
+      return;
+    }
+  }
+
+  // Make sure it’s the resize event.
+  if (data.context !== "iframe.resize") return;
+
+  // Set the iframe’s height!
+  iframe.style.height = `${data.height}px`;
+}
+
+// Attach our listener for the message from the iframe
+addEventListener("message", onMessage);
 
 </script>
